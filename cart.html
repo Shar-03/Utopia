@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@700&family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#FFE2FE;">
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <a href=""><img src="logofinal1.png" alt="" width="150px" height="90px"></a>
+         </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href=""><span class="material-symbols-outlined">shopping_bag</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+
+<div class="small-container cartpage">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Harry Potter 8.png" alt="">
+                    <div>
+                        <p>Harry Potter and the Cursed Child</p>
+                        <small>Price : Rs.690</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.690</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Hunger games.png" alt="">
+                    <div>
+                        <p>The Hunger Games</p>
+                        <small>Price : Rs.353</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.353</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Divergent.png" alt="">
+                    <div>
+                        <p>Lily plant</p>
+                        <small>Price : Rs.349</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Rs.349</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Rs.1392</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>Rs.20</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Rs.1412</td>
+            </tr>
+            <tr>
+                <td><a href="pay.html" class="btn">Pay</a></td>
+                
+            </tr>
+        </table>
+        <br>
+    </div>
+   
+    
+</div>
+
+
+   
+
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+   
+
+</body>
+</html>
